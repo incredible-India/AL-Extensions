@@ -114,7 +114,14 @@ page 50102 StudentCard
 
             action("Import/Export Image")
             {
+                Image = Add;
                 RunObject = Page STUDETPIC;
+            }
+
+            action("Report")
+            {
+                RunObject = Report StudentReport;
+                Image = Report;
             }
         }
     }

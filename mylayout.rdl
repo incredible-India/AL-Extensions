@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Student_IDCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Student_IDCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Student_IDCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="First_NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>First_NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>First_NameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Last_NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Last_NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Last_NameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AddressCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AddressCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AddressCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EmailCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EmailCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EmailCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="GPACaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>GPACaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>GPACaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AGECaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AGECaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AGECaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PhoneCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PhoneCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PhoneCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Student_ID">
+          <DataField>Student_ID</DataField>
+        </Field>
+        <Field Name="First_Name">
+          <DataField>First_Name</DataField>
+        </Field>
+        <Field Name="Last_Name">
+          <DataField>Last_Name</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="Email">
+          <DataField>Email</DataField>
+        </Field>
+        <Field Name="GPA">
+          <DataField>GPA</DataField>
+        </Field>
+        <Field Name="GPAFormat">
+          <DataField>GPAFormat</DataField>
+        </Field>
+        <Field Name="AGE">
+          <DataField>AGE</DataField>
+        </Field>
+        <Field Name="Phone">
+          <DataField>Phone</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
