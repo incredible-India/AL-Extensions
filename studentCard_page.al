@@ -116,6 +116,7 @@ page 50102 StudentCard
             {
                 Image = Add;
                 RunObject = Page STUDETPIC;
+
             }
 
             action("Report")
