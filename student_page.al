@@ -106,9 +106,9 @@ page 50101 MyStudentPage
 
 
 
-                end;
+                    // end;
 
-                //end;
+                end;
             }
 
             action(ExportPermissionSet)
@@ -132,6 +132,16 @@ page 50101 MyStudentPage
                 begin
                     Xmlport.Run(50101, false, true);
                 end;
+            }
+
+            action("Get Report")
+            {
+
+                Image = report;
+                RunObject = report StudentReport;
+
+
+
             }
 
         }
