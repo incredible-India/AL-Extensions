@@ -90,14 +90,14 @@ table 50101 MyStudent
 
     trigger OnInsert()
     begin
-        //validation for the first name
-        // if StrLen(Rec."First Name") < 1 then
-        //     Error('%1 cannot be less than One Char', FieldCaption("First Name"));
-        // //validation for the age
-        // if rec.AGE > 99 then
-        //     Error('%1 cannot be grater than 99', FieldCaption("Age"));
-        // if rec.AGE < 1 then
-        //     Error('%1 connnot be less than 1', FieldCaption(Age));
+        //   //  validation for the first name
+        //     if StrLen(Rec."First Name") < 1 then
+        //         Error('%1 cannot be less than One Char', FieldCaption("First Name"));
+        //     //validation for the age
+        //     if rec.AGE > 99 then
+        //         Error('%1 cannot be grater than 99', FieldCaption("Age"));
+        //     if rec.AGE < 1 then
+        //         Error('%1 connnot be less than 1', FieldCaption(Age));
 
     end;
 
