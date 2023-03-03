@@ -20,13 +20,7 @@ codeunit 50101 St
     end;
 
     //additional code 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnAfterUpdateSalesHeader', '', true, true)]
-    local procedure OnAfterUpdateSalesHeader(VAR CustLedgerEntry: Record "Cust. Ledger Entry"; VAR SalesInvoiceHeader: Record "Sales Invoice Header"; VAR SalesCrMemoHeader: Record "Sales Cr.Memo Header"; GenJnlLineDocType: Integer)
-    begin
 
-        CustLedgerEntry.st := v.st;
-
-    end;
 
 
 }
