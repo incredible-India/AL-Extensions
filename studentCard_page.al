@@ -14,41 +14,64 @@ page 50102 StudentCard
             {
                 field("Student ID"; Rec."Student ID")
                 {
+                    Caption = 'Student ID';
                     ApplicationArea = All;
+                    ShowMandatory = true;
+                    NotBlank = true;
 
                 }
 
                 field("First Name"; Rec."First Name")
                 {
+                    Caption = 'First Name';
                     ApplicationArea = All;
+                    ShowMandatory = true;
+                    NotBlank = true;
+
 
                 }
                 field("Last Name"; Rec."Last Name")
                 {
+                    Caption = 'Last Name';
                     ApplicationArea = All;
+                    ShowMandatory = true;
+                    NotBlank = true;
 
                 }
 
 
                 field("GPA"; Rec."GPA")
                 {
+                    Caption = 'GPA';
                     ApplicationArea = All;
+                    NotBlank = true;
+                    ShowMandatory = true;
+                    MinValue = 1;
+                    MaxValue = 10;
 
                 }
                 field("Age"; Rec."Age")
                 {
+                    Caption = 'Age';
                     ApplicationArea = All;
+                    NotBlank = true;
+                    ShowMandatory = true;
+                    MinValue = 1;
+                    MaxValue = 99;
 
                 }
                 field("Class"; Rec."Class")
                 {
+                    Caption = 'Class';
                     ApplicationArea = All;
+                    ShowMandatory = true;
+                    NotBlank = true;
 
                 }
 
                 field("Photo"; Rec.Photo)
                 {
-
+                    Caption = 'Photo';
 
                 }
 
@@ -59,19 +82,28 @@ page 50102 StudentCard
             {
                 field("Email"; Rec."Email")
                 {
+                    Caption = 'Email';
                     ApplicationArea = All;
+                    ShowMandatory = true;
+                    NotBlank = true;
+
 
                 }
 
                 field("Address"; Rec."Address")
                 {
+                    Caption = 'Address';
                     ApplicationArea = All;
+                    ShowMandatory = true;
+
 
                 }
 
                 field("Phone"; Rec."Phone")
                 {
+                    Caption = 'Phone';
                     ApplicationArea = All;
+                    ShowMandatory = true;
 
                 }
             }

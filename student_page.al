@@ -17,56 +17,67 @@ page 50101 MyStudentPage
                 field("Student ID"; Rec."Student ID")
                 {
                     ApplicationArea = All;
+                    Caption = 'Student ID';
+
 
                 }
 
                 field("First Name"; Rec."First Name")
                 {
                     ApplicationArea = All;
+                    Caption = 'First Name';
 
                 }
                 field("Last Name"; Rec."Last Name")
                 {
                     ApplicationArea = All;
+                    Caption = 'Last Name';
 
                 }
 
                 field("Email"; Rec."Email")
                 {
                     ApplicationArea = All;
+                    Caption = 'Email';
 
                 }
 
                 field("Address"; Rec."Address")
                 {
                     ApplicationArea = All;
+                    Caption = 'Address';
 
                 }
 
                 field("Phone"; Rec."Phone")
                 {
                     ApplicationArea = All;
+                    Caption = 'Phone';
 
                 }
                 field("GPA"; Rec."GPA")
                 {
                     ApplicationArea = All;
+                    Caption = 'GPA';
 
                 }
                 field("Age"; Rec."Age")
                 {
                     ApplicationArea = All;
+                    Caption = 'Age';
 
                 }
                 field("Class"; Rec."Class")
                 {
                     ApplicationArea = All;
+                    Caption = 'Class';
 
                 }
 
                 field("Photo"; Rec."Photo")
                 {
                     ApplicationArea = All;
+                    Caption = 'Age';
 
                 }
 
